@@ -1,0 +1,27 @@
+<MyGrid>
+
+    name: name
+
+    GridLayout:
+        cols:1
+        size: root.width - 200, root.height - 200
+        pos: 100, 100
+
+        Image:
+            source: 'img/alogo4.png'
+
+        Label:
+            text: "What is your name?"
+
+        TextInput:
+            id: name
+            multiline: False
+
+        GridLayout:
+            cols:2
+
+            Button:
+                text: "Log in"
+                on_press:root.btn()
+            Button:
+                text: "Sign up"
